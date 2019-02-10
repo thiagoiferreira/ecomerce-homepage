@@ -13,7 +13,7 @@ class Header extends React.Component {
                             <Navbar.Brand href="#home">
                                 <img
                                     alt="logo"
-                                    src={require("../logobranca.svg")}
+                                    src={require("../images/logobranca.svg")}
                                     width="320"
                                     height="57"
                                     className="d-inline-block align-top"

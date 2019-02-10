@@ -3,3 +3,8 @@
     height: 250px;
     width: 1260px;
 }
+
+.slider {
+    background-image: url("../images/darkgreen.png");
+    background-color: #999999
+}
