@@ -6,10 +6,17 @@ class Footer extends React.Component {
         const navbar = { backgroundColor: '#36B461' };
 
         return (
-            <div style={{marginBottom:50}}>
+            <div style={{marginTop:50}}>
                 <Row>
                     <Col>
-                        <Navbar style={{ backgroundColor: '#36B461' }} variant="dark">
+                        <Navbar style={{ backgroundColor: '#999999' }} variant="dark">
+                        <img
+                                    alt="logo"
+                                    src={require("../images/logoicone.svg")}
+                                    width="auto"
+                                    height="100"
+                                    className="d-inline-block align-top"
+                                />
                         </Navbar>
                     </Col>
                 </Row>

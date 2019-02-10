@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, Row, Col } from 'react-bootstrap';
 
 class Header extends React.Component {
-    render() {
+    render(props) {
         const navbar = { backgroundColor: '#36B461' };
 
         return (
