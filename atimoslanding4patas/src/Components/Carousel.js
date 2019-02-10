@@ -22,17 +22,19 @@ class Carousel extends React.Component {
 
     };
     return (
-      <Slider {...settings} className='slider'>
-        <div>
-          <Image rounded fluid className='imageCarousel'  src={doggo} />
-        </div>
-        <div>
-        <Image rounded fluid className='imageCarousel' src={catto}/>
-        </div>
-        <div>
-          <Image  rounded fluid className='imageCarousel' src={dog2}/>
-        </div>
-      </Slider>
+      <div style={{margin:30, backgroundColor: ''}}>
+        <Slider {...settings} className='slider'>
+          <div>
+            <Image rounded fluid className='imageCarousel'  src={doggo} />
+          </div>
+          <div>
+          <Image rounded fluid className='imageCarousel' src={catto}/>
+          </div>
+          <div>
+            <Image  rounded fluid className='imageCarousel' src={dog2}/>
+          </div>
+        </Slider>
+      </div>
     );
   }
 }

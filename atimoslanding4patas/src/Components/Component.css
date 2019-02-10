@@ -1,10 +1,10 @@
 .imageCarousel {
-    object-fit: cover;
+    object-fit: fill;
     height: 250px;
     width: 1260px;
 }
-
+/* fill works nice,scale-down does too, cover is shit */
 .slider {
     background-image: url("../images/darkgreen.png");
-    background-color: #999999
+    background-color: #999999;
 }
