@@ -4,28 +4,33 @@
   width: 100%;
   height: 100%;
   margin: 1;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito';
 }
-.h1, h2,h3,h4,h5{
-  font-weight: 800;
+.header{
+  font-weight:bolder;
+  font-family: 'Nunito';
 }
-
 
 .retText{
   text-align: center;
-  color: #efefef;
-  background-color: #36b461;
+  color: #36b461;
+  background-color: #efefef;
   border-style: groove;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-width: 8px;
   vertical-align: center;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.container{
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  align-content: space-between;
+}
+.cards{
+  height:auto;
+  width:auto; 
+  margin:auto;
 }
