@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
 import Carousel from './Components/Carousel';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Row, Col, Container, Button} from 'react-bootstrap';
 import './App.css';
 import Footer from './Components/Footer';
 import HeaderNotice from './Components/HeaderNotice';
@@ -36,6 +36,40 @@ state = {
       cardImage: cardImage3,
       buttonText: 'Comprar',
     },
+    
+
+  ],
+  cardsBottom: [
+    { 
+      cardtitle:'Ração Royal Canin Yorkshire',
+      cardbody:'Apenas 49.90',
+      cardImage: cardImage1,
+      buttonText:'Comprar'
+    },
+    {
+      cardtitle:'Arvore de Gato',
+      cardbody: 'Apenas 300 bonoros',
+      cardImage: cardImage2,
+      buttonText:'Comprar',      
+    },
+    {
+      cardtitle: 'Brinquedos de Cachorro',
+      cardbody: 'A partir de R$9.90',
+      cardImage: cardImage3,
+      buttonText: 'Comprar',
+    },
+    { 
+      cardtitle:'Ração Royal Canin Yorkshire',
+      cardbody:'Apenas 49.90',
+      cardImage: cardImage1,
+      buttonText:'Comprar'
+    },
+    {
+      cardtitle:'Arvore de Gato',
+      cardbody: 'Apenas 300 bonoros',
+      cardImage: cardImage2,
+      buttonText:'Comprar',      
+    },
 
   ],
 }
@@ -43,7 +77,7 @@ state = {
 
 
     const cardsTop = (
-      <Row>
+      <Row >
             {this.state.cardsTop.map((cardsTop) => {
               return (
                 <div className='cards'>
@@ -60,6 +94,24 @@ state = {
       </Row>
       
     );
+    const cardsBottom = (
+      <Row >
+            {this.state.cardsBottom.map((cardsBottom) => {
+              return (
+                <div className='cards' >
+                      <Cards 
+                        cardtitle={cardsBottom.cardtitle} 
+                        cardbody={cardsBottom.cardbody}
+                        cardImage={cardsBottom.cardImage}
+                        buttonText={cardsBottom.buttonText}
+                        key = {cardsBottom.index}
+                      />
+                </div>
+                )
+            })}
+      </Row>
+      
+    );
 
 
 
@@ -67,19 +119,22 @@ state = {
       <div className="App"  background-size="cover">
         <Header fixed='top'/>
         <div >
-          <Row>
-            <Col md='1'/>
-            <Col md='10'>
+          <Row  >
+            <Col sm= {{span:10, offset:1}} md={{span:10, offset:1}} lg={{span:10, offset:1}} xl={{span:8, offset:2}} >
             <Carousel/>
             </Col>
           </Row>
-            <HeaderNotice dialogue='Boa Noite meu consagrado' span={6}/>
+            <HeaderNotice dialogue='Lorem ipsum dolor sit amet. ' span={6}/>
             {cardsTop}
-            <HeaderNotice dialogue='Torne-se um Parceiro Quatro Patas' span={8}/>
-            {cardsTop}
+            <HeaderNotice dialogue='Lorem ipsum dolor sit amet. ' span={8}/>
+            {cardsBottom}
             <Row>
-              <Col md={{span:8, offset:2}} style={{backgroundColor:'white', marginTop:30, borderStyle: 'groove', borderWidth:7}}>
+              
+              <Col md={{span:8, offset:1}} style={{backgroundColor:'white',marginTop:30, borderTop:'groove', borderBottom:'groove',borderColor:'#999999', borderWidth:5}}>
               <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet lectus quis tortor venenatis vulputate et non turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sem nunc. Nam vestibulum elit justo, ac scelerisque dolor vehicula et. Etiam tortor ante, vestibulum et viverra sit amet, facilisis vel erat. Aliquam at orci vitae orci auctor volutpat. Etiam ultricies lacus ex, eget aliquet purus pellentesque sed. Vestibulum tempus congue libero, venenatis eleifend ipsum ultricies sed. Nullam bibendum, massa ullamcorper tristique cursus, massa eros egestas ex, eget hendrerit justo nunc a nibh.</p>
+              </Col >
+              <Col md={{span:2}} style={{backgroundColor:'white',marginTop:30, borderTop:'groove', borderBottom:'groove',borderColor:'#999999', borderWidth:5}}>
+              <Button style={{marginTop:60, backgroundColor: '#333333'}} >Junte-se a nós</Button>
               </Col>
             </Row>
           <Footer fixed='bottom'></Footer>

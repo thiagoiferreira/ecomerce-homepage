@@ -22,7 +22,7 @@ class Carousel extends React.Component {
 
     };
     return (
-      <div style={{margin:30, backgroundColor: ''}}>
+      <div style={{margin:30, border:'groove', borderWidth:6, borderColor:'#999999', background:'#efefef'}}>
         <Slider {...settings} className='slider'>
           <div>
             <Image rounded fluid className='imageCarousel'  src={doggo} />

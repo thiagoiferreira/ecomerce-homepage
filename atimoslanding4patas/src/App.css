@@ -13,13 +13,16 @@
 
 .retText{
   text-align: center;
-  color: #36b461;
+  color: #333333;
+  
   background-color: #efefef;
-  border-style: groove;
+  border-top: groove;
+  border-bottom: groove;
+  border-color:#999999;
   margin-bottom: 30px;
-  border-width: 8px;
+  border-width: 3px;
   vertical-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 
@@ -33,4 +36,6 @@
   height:auto;
   width:auto; 
   margin:auto;
+  border:groove;
+  border-color:#999999
 }
