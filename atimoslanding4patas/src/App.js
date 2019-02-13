@@ -6,6 +6,7 @@ import {Row, Col, Container, Button} from 'react-bootstrap';
 import './App.css';
 import Footer from './Components/Footer';
 import HeaderNotice from './Components/HeaderNotice';
+import Jumbotron from './Components/Jumbotron';
   
 const cardImage1 = 'https://images-americanas.b2w.io/produtos/01/00/item/110636/6/110636641_1GG.jpg'
 const cardImage2 = 'https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/a/r/arranhador_bigben_para_gatos.jpg';
@@ -128,14 +129,10 @@ state = {
             {cardsTop}
             <HeaderNotice dialogue='Lorem ipsum dolor sit amet. ' span={8}/>
             {cardsBottom}
-            <Row>
-              
-              <Col md={{span:8, offset:1}} style={{backgroundColor:'white',marginTop:30, borderTop:'groove', borderBottom:'groove',borderColor:'#999999', borderWidth:5}}>
-              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet lectus quis tortor venenatis vulputate et non turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sem nunc. Nam vestibulum elit justo, ac scelerisque dolor vehicula et. Etiam tortor ante, vestibulum et viverra sit amet, facilisis vel erat. Aliquam at orci vitae orci auctor volutpat. Etiam ultricies lacus ex, eget aliquet purus pellentesque sed. Vestibulum tempus congue libero, venenatis eleifend ipsum ultricies sed. Nullam bibendum, massa ullamcorper tristique cursus, massa eros egestas ex, eget hendrerit justo nunc a nibh.</p>
+            <Row>   
+              <Col md={{span:10, offset:1}} lg={{span:8, offset:2}} xs= {{span:12}}sm={{span:10, offset:1}} xl={{span:6, offset:3}} >
+              <Jumbotron/>
               </Col >
-              <Col md={{span:2}} style={{backgroundColor:'white',marginTop:30, borderTop:'groove', borderBottom:'groove',borderColor:'#999999', borderWidth:5}}>
-              <Button style={{marginTop:60, backgroundColor: '#333333'}} >Junte-se a nós</Button>
-              </Col>
             </Row>
           <Footer fixed='bottom'></Footer>
         </div>
