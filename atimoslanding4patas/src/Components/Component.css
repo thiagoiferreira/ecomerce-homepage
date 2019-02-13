@@ -12,4 +12,9 @@
 .navbar{
     background-color: '#36B461'
   }
+
+#basic-nav-dropdown{
+    font-family: 'Nunito';
+    color: white;
+}
   
